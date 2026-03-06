@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Abra Jens - Service Traiteur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+    background-size: cover;
+    background-position: center;
+    color: white;m
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+    color: gold;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: #8B0000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* MENU TABLE */
+.menu {
+    background: #fff;
+}
+
+.table-menu {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.table-menu th,
+.table-menu td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.table-menu th {
+    background-color: #8B0000;
+    color: white;
+    font-size: 18px;
+}
+
+.price {
+    font-weight: bold;
+    color: #8B0000;
+}
+
+/* GALERIE */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* CONTACT */
+.contact {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1555939594-58d7cb561ad1");
+    background-size: cover;
+    color: white;
+}
+
+/* FORM */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: #8B0000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    header {
+        padding: 60px 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Abra Jens</div>
+    <p>Service traiteur – Cuisine savoureuse pour tous vos événements</p>
+</header>
+
+<section>
+<div class="container">
+<h2>À propos</h2>
+<p style="text-align:center;">
+Abra Jens propose un service traiteur professionnel pour mariages,
+anniversaires, cérémonies, fêtes privées et événements d’entreprise.
+</p>
+</div>
+</section>
+
+<section class="menu">
+<div class="container">
+<h2>Menu & Tarifs</h2>
+
+<table class="table-menu">
+<tr>
+    <th>Catégorie</th>
+    <th>Plats</th>
+    <th>Prix / personne</th>
+</tr>
+
+<tr>
+    <td> Entrées</td>
+    <td>Salades composées, Beignets, Verrines</td>
+    <td class="price">2 000 FCFA</td>
+</tr>
+
+<tr>
+    <td>Plats principaux</td>
+    <td>Riz sauce, Poulet braisé, Poisson frit, Viande</td>
+    <td class="price">5 000 FCFA</td>
+</tr>
+
+<tr>
+    <td> Desserts</td>
+    <td>Gâteaux, Desserts maison, Fruits frais</td>
+    <td class="price">1 500 FCFA</td>
+</tr>
+
+<tr>
+    <td> Boissons</td>
+    <td>Jus naturels, Eau, Soda</td>
+    <td class="price">1 000 FCFA</td>
+</tr>
+</table>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Galerie</h2>
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1604908177522-4294b87d0d75">
+    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe">
+    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187">
+</div>
+</div>
+</section>
+
+<section class="contact">
+<div class="container">
+<h2>Demande de devis</h2>
+
+<form action="mailto:Jenniferabra38@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Nom" placeholder="Nom complet" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="tel" name="WhatsApp" placeholder="Numéro WhatsApp" required>
+    <input type="date" name="Date" required>
+    <textarea name="Détails" rows="5" placeholder="Nombre de personnes, type d’événement, lieu..."></textarea>
+    <button type="submit">Envoyer la demande</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+<p> Jenniferabra38@gmail.com | WhatsApp : 93 96 07 52</p>       
+<p>© 2026 - Abra Jens</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/22993960752" target="_blank"></a>
+
+</body>
+</html>
